@@ -2,24 +2,26 @@
 
 ## App
 
+- Contain gentlemen array
+- Extract a counter from array with every
 - Render Info Component
-- Render 4 GentlemanCards
+- Render a Button with a "Select all" message and an action to select all cards
+- Render 4 Gentleman from array
 
 ## Info
 
 - Render title
-- Show actual selected gentlemen counter
-- Render a Button with a "Select all" message and an action to select all cards
+- Show actual selected gentlemen counter from App
 
-## GentlemanCard
+## Gentleman
 
 - Render a card container
 - Render a picture of a gentleman
 - Render the initial letter of gentleman's man
 - Render his full name
 - Render his profession, status and twitter info.
-- Render a Button Component with check text and an action to select the gentleman
-- Render a Button Component with cross text and an action to deselect the gentleman
+- Render a red circle with a cross
+- Render a green round Button Component with check text and an action to select/deselect the gentleman
 
 ## Button
 
