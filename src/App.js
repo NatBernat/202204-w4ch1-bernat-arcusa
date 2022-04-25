@@ -35,11 +35,6 @@ const gentlemen = [
 ];
 
 let selectedGentlemen = 0;
-gentlemen.forEach((gentleman) => {
-  if (gentlemen[gentleman].selected !== false) {
-    selectedGentlemen += 1;
-  }
-});
 
 function App() {
   return (
