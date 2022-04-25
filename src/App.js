@@ -34,12 +34,19 @@ const gentlemen = [
   },
 ];
 
+let selectedGentlemen = 0;
+gentlemen.forEach((gentleman) => {
+  if (gentlemen[gentleman].selected !== false) {
+    selectedGentlemen += 1;
+  }
+});
+
 function App() {
   return (
     <div className="container">
       <Info
         titleText="The pointing gentlemen"
-        counterNumber="0"
+        counterNumber={selectedGentlemen}
         counterText=" gentlemen pointing at you"
       ></Info>
       <main className="main">
@@ -47,6 +54,7 @@ function App() {
           <Gentleman
             picture={"img/" + gentlemen[0].picture}
             alternativeText={gentlemen[0].alternativeText}
+            firstLetter={gentlemen[0].name[0]}
             name={gentlemen[0].name}
             profession={gentlemen[0].profession}
             status={gentlemen[0].status}
@@ -55,6 +63,7 @@ function App() {
           <Gentleman
             picture={"img/" + gentlemen[1].picture}
             alternativeText={gentlemen[1].alternativeText}
+            firstLetter={gentlemen[1].name[0]}
             name={gentlemen[1].name}
             profession={gentlemen[1].profession}
             status={gentlemen[1].status}
@@ -63,6 +72,7 @@ function App() {
           <Gentleman
             picture={"img/" + gentlemen[2].picture}
             alternativeText={gentlemen[2].alternativeText}
+            firstLetter={gentlemen[1].name[0]}
             name={gentlemen[2].name}
             profession={gentlemen[2].profession}
             status={gentlemen[2].status}
