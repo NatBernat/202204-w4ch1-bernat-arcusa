@@ -1,6 +1,7 @@
 function Gentleman({
   picture,
   alternativeText,
+  firstLetter,
   name,
   profession,
   status,
@@ -14,7 +15,7 @@ function Gentleman({
           src={picture}
           alt={alternativeText}
         />
-        <span className="gentleman__initial">J</span>
+        <span className="gentleman__initial">{firstLetter}</span>
       </div>
       <div className="gentleman__data-container">
         <h2 className="gentleman__name">{name}</h2>
